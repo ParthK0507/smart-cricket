@@ -1,0 +1,286 @@
+{
+ "note": "Home grounds by team and year. Built from league matches (2+ matches at a ground in a season) with manual edits. Neutral: 2009, 2020, 2021, 2022 and the UAE leg of 2014.",
+ "neutral_years": [
+  2009,
+  2020,
+  2021,
+  2022
+ ],
+ "uae_neutral_year": 2014,
+ "uae_venues": [
+  "Dubai International Cricket Stadium, Dubai",
+  "Sheikh Zayed Stadium, Abu Dhabi",
+  "Sharjah Cricket Stadium, Sharjah"
+ ],
+ "home": {
+  "Chennai Super Kings": {
+   "MA Chidambaram Stadium, Chennai": [
+    2008,
+    2010,
+    2011,
+    2012,
+    2013,
+    2015,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "JSCA International Stadium Complex, Ranchi": [
+    2014
+   ],
+   "MCA Stadium, Pune": [
+    2018
+   ]
+  },
+  "Deccan Chargers": {
+   "Rajiv Gandhi International Stadium, Hyderabad": [
+    2008,
+    2011,
+    2012
+   ],
+   "Barabati Stadium, Cuttack": [
+    2010,
+    2012
+   ],
+   "Dr DY Patil Sports Academy, Navi Mumbai": [
+    2010
+   ],
+   "Vidarbha Cricket Association Stadium, Nagpur": [
+    2010
+   ],
+   "ACA-VDCA Stadium, Visakhapatnam": [
+    2012
+   ]
+  },
+  "Delhi Capitals": {
+   "Arun Jaitley Stadium, Delhi": [
+    2008,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "Shaheed Veer Narayan Singh Stadium, Raipur": [
+    2013,
+    2015,
+    2016
+   ],
+   "ACA-VDCA Stadium, Visakhapatnam": [
+    2024,
+    2025
+   ]
+  },
+  "Gujarat Lions": {
+   "Green Park, Kanpur": [
+    2016,
+    2017
+   ],
+   "Saurashtra Cricket Association Stadium, Rajkot": [
+    2016,
+    2017
+   ]
+  },
+  "Gujarat Titans": {
+   "Narendra Modi Stadium, Ahmedabad": [
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "Kochi Tuskers Kerala": {
+   "Holkar Cricket Stadium, Indore": [
+    2011
+   ],
+   "Nehru Stadium, Kochi": [
+    2011
+   ]
+  },
+  "Kolkata Knight Riders": {
+   "Eden Gardens, Kolkata": [
+    2008,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "JSCA International Stadium Complex, Ranchi": [
+    2013
+   ],
+   "Barabati Stadium, Cuttack": [
+    2014
+   ]
+  },
+  "Lucknow Super Giants": {
+   "Ekana Cricket Stadium, Lucknow": [
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "Mumbai Indians": {
+   "Dr DY Patil Sports Academy, Navi Mumbai": [
+    2008
+   ],
+   "Wankhede Stadium, Mumbai": [
+    2008,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "Brabourne Stadium, Mumbai": [
+    2010
+   ],
+   "ACA-VDCA Stadium, Visakhapatnam": [
+    2016
+   ]
+  },
+  "Pune Warriors": {
+   "Dr DY Patil Sports Academy, Navi Mumbai": [
+    2011
+   ],
+   "MCA Stadium, Pune": [
+    2012,
+    2013
+   ]
+  },
+  "Punjab Kings": {
+   "PCA IS Bindra Stadium, Mohali": [
+    2008,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023
+   ],
+   "HPCA Stadium, Dharamsala": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2023,
+    2024,
+    2025
+   ],
+   "Barabati Stadium, Cuttack": [
+    2014
+   ],
+   "MCA Stadium, Pune": [
+    2015
+   ],
+   "Holkar Cricket Stadium, Indore": [
+    2017,
+    2018
+   ],
+   "Maharaja Yadavindra Singh Stadium, Mullanpur": [
+    2024,
+    2025
+   ]
+  },
+  "Rajasthan Royals": {
+   "Sawai Mansingh Stadium, Jaipur": [
+    2008,
+    2010,
+    2011,
+    2012,
+    2013,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "Narendra Modi Stadium, Ahmedabad": [
+    2010,
+    2014,
+    2015
+   ],
+   "Brabourne Stadium, Mumbai": [
+    2015
+   ],
+   "Barsapara Cricket Stadium, Guwahati": [
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "Rising Pune Supergiant": {
+   "ACA-VDCA Stadium, Visakhapatnam": [
+    2016
+   ],
+   "MCA Stadium, Pune": [
+    2016,
+    2017
+   ]
+  },
+  "Royal Challengers Bengaluru": {
+   "M Chinnaswamy Stadium, Bengaluru": [
+    2008,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ]
+  },
+  "Sunrisers Hyderabad": {
+   "Rajiv Gandhi International Stadium, Hyderabad": [
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2023,
+    2024,
+    2025
+   ],
+   "ACA-VDCA Stadium, Visakhapatnam": [
+    2015
+   ]
+  }
+ }
+}

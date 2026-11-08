@@ -1,0 +1,124 @@
+{
+ "version": 1,
+ "trained_on": "2026-11-07",
+ "snapshots": 18140,
+ "chases": 1139,
+ "min_balls": 18,
+ "features": [
+  "rrr",
+  "crr",
+  "wickets_in_hand",
+  "balls_left",
+  "runs_needed",
+  "target_vs_par"
+ ],
+ "walk_forward": [
+  {
+   "overs_done": 3,
+   "states": 691,
+   "accuracy": 0.695,
+   "accuracy_margin": 0.034,
+   "baseline_accuracy": 0.671,
+   "log_loss": 0.569,
+   "baseline_log_loss": 0.595
+  },
+  {
+   "overs_done": 6,
+   "states": 691,
+   "accuracy": 0.742,
+   "accuracy_margin": 0.033,
+   "baseline_accuracy": 0.671,
+   "log_loss": 0.509,
+   "baseline_log_loss": 0.595
+  },
+  {
+   "overs_done": 10,
+   "states": 681,
+   "accuracy": 0.777,
+   "accuracy_margin": 0.031,
+   "baseline_accuracy": 0.668,
+   "log_loss": 0.468,
+   "baseline_log_loss": 0.6
+  },
+  {
+   "overs_done": 15,
+   "states": 643,
+   "accuracy": 0.841,
+   "accuracy_margin": 0.028,
+   "baseline_accuracy": 0.653,
+   "log_loss": 0.354,
+   "baseline_log_loss": 0.617
+  },
+  {
+   "overs_done": 18,
+   "states": 534,
+   "accuracy": 0.873,
+   "accuracy_margin": 0.028,
+   "baseline_accuracy": 0.644,
+   "log_loss": 0.283,
+   "baseline_log_loss": 0.625
+  }
+ ],
+ "calibration": [
+  {
+   "bin": "(0.0, 0.1]",
+   "states": 2041,
+   "predicted": 0.035,
+   "actual": 0.041
+  },
+  {
+   "bin": "(0.1, 0.2]",
+   "states": 1106,
+   "predicted": 0.147,
+   "actual": 0.205
+  },
+  {
+   "bin": "(0.2, 0.3]",
+   "states": 888,
+   "predicted": 0.249,
+   "actual": 0.331
+  },
+  {
+   "bin": "(0.3, 0.4]",
+   "states": 717,
+   "predicted": 0.35,
+   "actual": 0.413
+  },
+  {
+   "bin": "(0.4, 0.5]",
+   "states": 750,
+   "predicted": 0.449,
+   "actual": 0.476
+  },
+  {
+   "bin": "(0.5, 0.6]",
+   "states": 796,
+   "predicted": 0.551,
+   "actual": 0.574
+  },
+  {
+   "bin": "(0.6, 0.7]",
+   "states": 845,
+   "predicted": 0.651,
+   "actual": 0.641
+  },
+  {
+   "bin": "(0.7, 0.8]",
+   "states": 927,
+   "predicted": 0.752,
+   "actual": 0.736
+  },
+  {
+   "bin": "(0.8, 0.9]",
+   "states": 1122,
+   "predicted": 0.853,
+   "actual": 0.864
+  },
+  {
+   "bin": "(0.9, 1.0]",
+   "states": 1806,
+   "predicted": 0.955,
+   "actual": 0.967
+  }
+ ]
+}

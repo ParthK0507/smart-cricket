@@ -1,0 +1,33 @@
+C:\Users\Lenovo\ML\PORTFOLIO
+[IPL json ball by ball]
+    ipl_json.zip  (3.9 MB)
+[Project 1]
+    [player-consistency-index]
+        [data]
+            [processed]
+            [raw]
+                [ipl_json]
+                    ... (deeper folders not shown)
+        [notebooks]
+            01_json_to_ball_by_ball.ipynb
+            balls.parquet  (1.7 MB)
+            batter_at_venue.parquet
+            batter_vs_bowler.parquet
+            batter_vs_team.parquet
+            ... and 11 more .parquet files
+[Project 2]
+    [data]
+        [processed]
+            matches.csv
+        [raw]
+            [ipl_json]
+                1082591.json
+                1082592.json
+                1082593.json
+                1082594.json
+                README.txt
+                ... and 1165 more .json files
+    [notebooks]
+        match_outcome_analysis.ipynb
+    .gitignore
+    requirements.txt

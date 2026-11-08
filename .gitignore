@@ -1,0 +1,8 @@
+data/raw/
+.env
+.streamlit/secrets.toml
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+Untitled*.ipynb
+requirements_project2.txt

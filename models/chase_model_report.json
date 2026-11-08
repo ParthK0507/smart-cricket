@@ -1,0 +1,53 @@
+{
+ "version": 1,
+ "trained_on": "2026-11-06",
+ "trained_through": "2025-06-03",
+ "matches_used": 1139,
+ "rain_affected_excluded": 22,
+ "walk_forward": {
+  "matches": 691,
+  "accuracy": 0.68,
+  "accuracy_margin": 0.035,
+  "log_loss": 0.593,
+  "majority_accuracy": 0.534
+ },
+ "feature": "target_vs_par",
+ "calibration": [
+  {
+   "bin": "(0.0, 0.3]",
+   "matches": 147,
+   "predicted": 0.194,
+   "actual": 0.211
+  },
+  {
+   "bin": "(0.3, 0.4]",
+   "matches": 110,
+   "predicted": 0.348,
+   "actual": 0.455
+  },
+  {
+   "bin": "(0.4, 0.5]",
+   "matches": 90,
+   "predicted": 0.45,
+   "actual": 0.467
+  },
+  {
+   "bin": "(0.5, 0.6]",
+   "matches": 124,
+   "predicted": 0.549,
+   "actual": 0.581
+  },
+  {
+   "bin": "(0.6, 0.7]",
+   "matches": 97,
+   "predicted": 0.652,
+   "actual": 0.742
+  },
+  {
+   "bin": "(0.7, 1.0]",
+   "matches": 123,
+   "predicted": 0.818,
+   "actual": 0.829
+  }
+ ]
+}
