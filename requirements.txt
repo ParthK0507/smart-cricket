@@ -7,3 +7,9 @@ plotly==5.24.1
 rapidfuzz==3.14.6
 scikit-learn==1.5.1
 joblib==1.4.2
+langgraph==1.2.22
+langchain-core==1.8.0
+langchain-google-genai==4.4.0
+google-genai==2.29.0
+pydantic==2.14.3
+python-dotenv==1.2.4
