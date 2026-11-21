@@ -54,3 +54,29 @@ if question:
                                    + [{"role": "user", "text": question}, {"role": "assistant", "out": out}])[-12:]
 
 st.caption("Every number comes from the same verified tables as the dashboard pages. Predictions are model estimates.")
+
+
+def _owner_debug():
+    try:
+        return str(st.secrets.get("DEBUG_ASK", "")).strip().lower() == "true"
+    except Exception:
+        return False
+
+
+if _owner_debug():
+    with st.expander("Owner diagnostics (shown only while the DEBUG_ASK secret is set)"):
+        from agents import llm
+        st.write("Keys found:", llm.status())
+        st.write("Models:", llm.MODELS)
+        if st.button("Test the model now", key="dbg_test"):
+            import time
+            t0 = time.monotonic()
+            try:
+                out, att = llm.invoke_llm("fast", "Reply with the single word: ready", budget=25)
+                st.success(f"Answered in {time.monotonic() - t0:.1f}s: {llm.as_text(out).strip()[:20]}")
+                st.write(att)
+            except llm.LLMUnavailable as e:
+                st.error(f"Unavailable: {e.reason}")
+                st.write(e.attempts)
+            except Exception as e:
+                st.error(f"{type(e).__name__}: {str(e)[:300]}")
