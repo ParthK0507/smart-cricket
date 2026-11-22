@@ -94,4 +94,16 @@ check("cache: the least recently used entry goes first", g.cache_get("b") is Non
 g.cache_put("   ", 5)
 check("cache: empty questions are not stored", g.cache_get("   ") is None)
 
+
+# ---- limits can be set from the environment
+import os
+from agents.guard import _setting
+check("setting: the default is used when nothing is set", _setting("NO_SUCH_SETTING_X", 7) == 7)
+os.environ["TEST_SETTING_X"] = "12"
+check("setting: a value is read from the environment", _setting("TEST_SETTING_X", 7) == 12)
+os.environ["TEST_SETTING_X"] = "not a number"
+check("setting: nonsense falls back to the default", _setting("TEST_SETTING_X", 7) == 7)
+os.environ["TEST_SETTING_X"] = "0"
+check("setting: never below 1", _setting("TEST_SETTING_X", 7) == 1)
+
 print("\nfailures:", fails)

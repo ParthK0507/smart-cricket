@@ -1,6 +1,7 @@
 """Safeguards for the Ask page: a rate limit per visitor, a daily cap shared by all visitors, and an answer cache.
 State lives in the running app and resets when the host restarts, so it complements spending limits on the keys
 rather than replacing them."""
+import os
 import string
 import threading
 import time
@@ -91,4 +92,13 @@ class Guard:
                 self._cache.popitem(last=False)
 
 
-GUARD = Guard()
+def _setting(name, default):
+    """Read a limit from the environment (Streamlit passes top-level secrets that way), so it can change without a redeploy."""
+    try:
+        return max(1, int(os.environ.get(name, default)))
+    except ValueError:
+        return default
+
+
+GUARD = Guard(per_minute=_setting("ASK_PER_MINUTE", 5), per_session_day=_setting("ASK_PER_VISITOR_DAY", 40),
+              daily_cap=_setting("ASK_DAILY_CAP", 150))
