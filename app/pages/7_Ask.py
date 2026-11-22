@@ -19,6 +19,12 @@ st.caption(f"Ask about IPL players, teams, grounds and matches in your own words
 EXAMPLES = ["Compare Kohli and Raina", "Top 5 run scorers in 2016", "Kohli vs Ashwin",
             "Has Kohli improved his strike rate recently?", "CSK vs MI at Wankhede", "Tell me about Bumrah"]
 
+from agents.llm import load_keys
+
+if not load_keys():
+    st.warning("The AI assistant is not set up on this deployment (no API keys were found), so questions show the "
+               "verified numbers without written text. The dashboard pages work as usual.")
+
 if "sid" not in st.session_state:
     st.session_state["sid"] = uuid.uuid4().hex
 if "history" not in st.session_state:
